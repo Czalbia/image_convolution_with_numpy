@@ -16,12 +16,13 @@ class ConvoluteValid():
         self.frame = Image.open(name).convert('L')
         self.feed_in_channel = np.asarray(self.frame)
         self.feed_in_channel2 = np.asarray(self.frame)
-
+        # The first kernel (horizontal)
         self.kernel_channel = np.array([
             [-1, 0, 1],
             [-2, 0, 2],
             [-1, 0, 1]
         ])
+        # The first kernel (vertical)
         self.kernel_channel2 = np.array([
             [-1, -2, -1],
             [0, 0, 0],
@@ -81,7 +82,7 @@ class ConvoluteValid():
         
         self.image_done.show()
 
-
+# File name
 image = ConvoluteValid("car_tot.png")
 image.run()
 image.show()
