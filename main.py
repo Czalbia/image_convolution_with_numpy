@@ -1,6 +1,6 @@
 '''
 This code is a demonstration of how Sobel operator works on sample images.
-By modifing the kernels, simulation of any convolution can be shown as well.
+By modifing the kernels, demonstration of how any convolution affects the input image can be shown as well.
 
 by Jan Czalbowski, 2023
 '''
